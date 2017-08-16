@@ -1,0 +1,1397 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}E:\Kgattin\My_Documents\_Ph.D_i_CV\Ph.D. rad\Radionica_Prijava rada\1000_gfdd_sdc_ifs_input.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}26 May 2017, 15:36:58
+{txt}
+{com}. 
+. set linesize  80
+{txt}
+{com}. 
+. 
+. 
+. 
+. 
+. ********************************************************************************
+. ********************************************************************************
+. **
+. ** Import podataka iz GFDD  
+. ** 
+. ** Čihak, M., A. Demirguc-Kunt, E. Feyen and R. Levine. (2017). 
+. ** Global Financial Development Database (GFDD): World Bank.
+. ** 
+. ** http://www.worldbank.org/en/publication/gfdr/data/global-financial-development-database 
+. ** 
+. **
+. ********************************************************************************
+. ********************************************************************************
+. 
+. import excel "$phd\GlobalFinancialDevelopmentDatabaseJune2016.xlsx", sheet("Data - June 2016") firstrow
+{res}{txt}
+{com}. 
+. label var GFDDAI01 "Number of depositors with commercial banks per 1,000 adults."
+{txt}
+{com}. label var GFDDAI02 "Number of commercial bank branches per 100,000 adults."
+{txt}
+{com}. label var GFDDAI03 "Percentage of firms in the formal sector with a line of credit or a loan from a financial institution."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAI04 "Percentage of small firms (5-19 workers) in the formal sector with a line of credit or a loan from a financial institution."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAI05 "The percentage of respondents with an account (self or together with someone else) at a bank, credit union, another financial institution (e.g., cooperative, microfinance institution), or the post office (if applicable) including respondents who reported having a debit card (% age 15+)."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAI06 "The percentage of respondents who report saving or setting aside any money by using an account at a formal financial institution such as a bank, credit union, microfinance institution, or cooperative in the past 12 months (% age 15+)."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAI07 "The percentage of respondents who report borrowing any money from a bank, credit union, microfinance institution, or another financial institution such as a cooperative in the past 12 months (% age 15+)."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAI08 "The percentage of respondents who report using their accounts at a formal financial institution for business purposes only or for both business purposes and personal transactions (% age 15+)."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAI09 "The percentage of respondents who report using their accounts at a formal financial institution to receive money or payments from the government in the past 12 months (% age 15+)."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAI10 "The percentage of respondents who report using their accounts at a formal financial institution to receive money from family members living elsewhere in the past 12 months (% age 15+)."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAI11 "The percentage of respondents who report using their accounts at a formal financial institution to receive money or payments for work or from selling goods in the past 12 months (% age 15+)."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAI12 "The percentage of respondents who report saving or setting aside any money in the past 12 months (% age 15+)."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAI13 "The percentage of respondents who report saving or setting aside any money by using an informal savings club or a person outside the family in the past 12 months (% age 15+)."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAI14 "The percentage of respondents who borrowed any money in the past 12 months from any of the following sources: a formal financial institution, a store by using installment credit, family or friends, employer, or another private lender (% age 15+). (Note that getting a loan does not necessarily require having an account.)"
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAI15 "The percentage of respondents who report borrowing any money from a private lender in the past 12 months (% age 15+)."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAI16 "The percentage of respondents who report borrowing any money from an employer in the past 12 months (% age 15+)."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAI17 "The percentage of respondents who borrowed any money in the past 12 months from a store by using installment credit or buying on credit (% age 15+)."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAI18 "The percentage of respondents who report borrowing any money from family or friends in the past 12 months (% age 15+)."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAI19 "The percentage of respondents who used checks in the past 12 months to make payments on bills or to buy things using money from their accounts (% age 15+)."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAI20 "The percentage of respondents with a credit card (% age 15+)."
+{txt}
+{com}. label var GFDDAI21 "The percentage of respondents with a debit card (% age 15+)."
+{txt}
+{com}. label var GFDDAI22 "The percentage of respondents who used electronic payments (payments that one makes or that are made automatically including wire transfers or payments made online) in the past 12 months to make payments on bills or to buy things using money from their accounts (% age 15+)."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAI23 "The percentage of respondents who report using a mobile phone to pay bills in the past 12 months (% age 15+)."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAI24 "The percentage of respondents who report using a mobile phone to send money in the past 12 months (% age 15+)."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAI25 "Number of ATMs per 100,000 adults."
+{txt}
+{com}. label var GFDDAI26 "Adults depositing/withdrawing at least once in a typical month (% age 15+)"
+{txt}
+{com}. label var GFDDAI27 "Percentage of firms with a checking or savings account."
+{txt}
+{com}. label var GFDDAI28 "Percentage of firms using banks to finance purchases of fixed assets."
+{txt}
+{com}. label var GFDDAI29 "Percentage of firms using bank loans to finance working capital."
+{txt}
+{com}. label var GFDDAI30 "Percentage of loans where a formal financial institution requires collateral in order to provide the financing."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAI31 "Value of collateral needed by a formal financial institution for a loan or line of credit as a percentage of the loan value or the value of the line of credit."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAI32 "Percent of firms that did not apply for a loan in the last fiscal year because they did not need a loan. The denominator is the sum of all firms who applied and did not apply for a loan. The numerator is the number of firms who did not apply for a loan and also stated that they did not need a loan."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAI33 "Percent of firms whose most recent loan application was rejected by a formal financial institution."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAI34 "Estimated proportion of purchases of fixed assets that was financed from bank loans."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAI35 "Proportion of the working capital that was financed by bank loans."
+{txt}
+{com}. label var GFDDAI36 "Percentage of firms identifying access or cost of finance as a major or very severe obstacle."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAM01 "Value of all traded shares outside of the largest ten traded companies as a share of total value of all traded shares in a stock market exchange."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAM02 "Value of listed shares outside of the largest ten largest companies to total value of all listed shares."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAM03 "Total amount of domestic nonfinancial corporate bonds and notes outstanding to total amount of domestic bonds and notes outstanding, both corporate and noncorporate."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDAM04 "Estimated proportion of purchases of fixed assets that was financed by owners’ contribution or issue of new equity shares."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDDI01 "The financial resources provided to the private sector by domestic money banks as a share of GDP. Domestic money banks comprise commercial banks and other financial institutions that accept transferable deposits, such as demand deposits."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDDI02 "Total assets held by deposit money banks as a share of GDP. Assets include claims on domestic real nonfinancial sector which includes central, state and local governments, nonfinancial public enterprises and private sector. Deposit money banks comprise commercial banks and other financial institutions that accept transferable deposits, such as demand deposits."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDDI03 "Total assets held by financial institutions that do not accept transferable deposits but that perform financial intermediation by accepting other types of deposits or by issuing securities or other liabilities that are close substitutes for deposits as a share of GDP. It covers institutions such as saving and mortgage loan institutions, post-office savings institution, building and loan associations, finance companies that accept deposits or deposit substitutes, development banks, and offshore banking institutions.  Assets include claims on domestic real nonfinancial sector such as central-, state- and local government, nonfinancial public enterprises and private sector."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDDI04 "Total assets held by deposit money banks as a share of sum of deposit money bank and Central Bank claims on domestic nonfinancial real sector. Assets include claims on domestic real nonfinancial sector which includes central, state and local governments, nonfinancial public enterprises and private sector. Deposit money banks comprise commercial banks and other financial institutions that accept transferable deposits, such as demand deposits."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDDI05 "Ratio of liquid liabilities to GDP. Liquid liabilities are also known as broad money, or M3. They are the sum of currency and deposits in the central bank (M0), plus transferable deposits and electronic currency (M1), plus time and savings deposits, foreign currency transferable deposits, certificates of deposit, and securities repurchase agreements (M2), plus travelers checks, foreign currency time deposits, commercial paper, and shares of mutual funds or market funds held by residents."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDDI06 "Ratio of central bank assets to GDP. Central bank assets are claims on domestic real nonfinancial sector by the Central Bank."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDDI07 "Ratio of assets of mutual funds to GDP. A mutual fund is a type of managed collective investment scheme that pools money from many investors to purchase securities."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDDI08 "Demand, time and saving deposits in deposit money banks and other financial institutions as a share of GDP."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDDI09 "Ratio of life insurance premium volume to GDP. Premium volume is the insurer's direct premiums earned (if Property/Casualty) or received (if Life/Health) during the previous calendar year."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDDI10 "Ratio of nonlife insurance premium volume to GDP. Premium volume is the insurer's direct premiums earned (if Property/Casualty) or received (if Life/Health) during the previous calendar year."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDDI11 "Ratio of assets of insurance companies to GDP."
+{txt}
+{com}. label var GFDDDI12 "Private credit by deposit money banks and other financial institutions to GDP."
+{txt}
+{com}. label var GFDDDI13 "Ratio of assets of pension funds to GDP. A pension fund is any plan, fund, or scheme that provides retirement income."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDDI14 "Domestic credit to private sector refers to financial resources provided to the private sector."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDDM01 "Total value of all listed shares in a stock market as a percentage of GDP."
+{txt}
+{com}. label var GFDDDM02 "Total value of all traded shares in a stock market exchange as a percentage of GDP."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDDM03 "Total amount of domestic private debt securities (amount outstanding) issued in domestic markets as a share of GDP. It covers data on long-term bonds and notes, commercial paper and other short-term notes."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDDM04 "Total amount of domestic public debt securities (amount outstanding) issued in domestic markets as a share of GDP. It covers long-term bonds and notes, treasury bills, commercial paper and other short-term notes."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDDM05 "Amount of private international debt securities (amount outstanding), as a share of GDP. It covers long-term bonds and notes and money market instruments placed on international markets."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDDM06 "Amount of public international debt securities (amount outstanding), as a share of GDP. It covers long-term bonds and notes and money market instruments placed on international markets."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDDM07 "Amount of international debt securities (amount outstanding), as a share of GDP. It covers long-term bonds and notes and money market instruments placed on international markets."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDDM08 "Ratio of gross portfolio equity liabilities to GDP. Equity liabilities include shares, stocks, participation, and similar documents (such as American depository receipts) that usually denote ownership of equity."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDDM09 "Ratio of gross portfolio equity assets to GDP. Equity assets include shares, stocks, participation, and similar documents (such as American depository receipts) that usually denote ownership of equity."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDDM10 "Ratio of gross portfolio debt liabilities to GDP. Debt liabilities cover (1) bonds, debentures, notes, etc., and (2) money market or negotiable debt instruments."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDDM11 "Ratio of gross portfolio debt assets to GDP."
+{txt}
+{com}. label var GFDDDM12 "Ratio of new syndicated borrowing volume by private entities in industries other than finance, holding companies and insurance to GDP."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDDM13 "Ratio of new corporate bond issuance volume by private entities in industries other than finance, holding companies and insurance to GDP."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDDM14 "Volume weighted average maturity of new syndicated borrowing by private entities in industries other than finance, holding companies and insurance in years."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDDM15 "Volume weighted average maturity of new corporate bond issuance by private entities in industries other than finance, holding companies and insurance in years."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDEI01 "Accounting value of bank's net interest revenue as a share of its average interest-bearing (total earning) assets."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDEI02 "Difference between lending rate and deposit rate. Lending rate is the rate charged by banks on loans to the private sector and deposit interest rate is the rate offered by commercial banks on three-month deposits."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDEI03 "Bank’s income that has been generated by noninterest related activities as a percentage of total income (net-interest income plus noninterest income). Noninterest related income includes net gains on trading and derivatives, net gains on other securities, net fees and commissions and other operating income."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDEI04 "Operating expenses of a bank as a share of the value of all assets held. Total assets include total earning assets, cash and due from banks, foreclosed real estate, fixed assets, goodwill, other intangibles, current tax assets, deferred tax assets, discontinued operations and other assets."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDEI05 "Commercial banks’ after-tax net income to yearly averaged total assets."
+{txt}
+{com}. label var GFDDEI06 "Commercial banks’ after-tax net income to yearly averaged equity."
+{txt}
+{com}. label var GFDDEI07 "Operating expenses of a bank as a share of sum of net-interest revenue and other operating income."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDEI08 "Ratio between credit by domestic money banks to the government and state-owned enterprises and GDP."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDEI09 "Commercial banks’ pre-tax income to yearly averaged total assets."
+{txt}
+{com}. label var GFDDEI10 "Commercial banks’ pre-tax income to yearly averaged equity."
+{txt}
+{com}. label var GFDDEM01 "Total value of shares traded during the period divided by the average market capitalization for the period."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDSI01 "It captures the probability of default of a country's commercial banking system. Z-score compares the buffer of a country's commercial banking system (capitalization and returns) with the volatility of those returns."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDSI02 "Ratio of defaulting loans (payments of interest and principal past due by 90 days or more) to total gross loans (total value of loan portfolio). The loan amount recorded as nonperforming includes the gross value of the loan as recorded on the balance sheet, not just the amount that is overdue."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDSI03 "Ratio of bank capital and reserves to total assets. Capital and reserves include funds contributed by owners, retained earnings, general and special reserves, provisions, and valuation adjustments. Capital includes tier 1 capital (paid-up shares and common stock), which is a common feature in all countries' banking systems, and total regulatory capital, which includes several specified types of subordinated debt instruments that need not be repaid if the funds are required to maintain minimum capital levels (these comprise tier 2 and tier 3 capital). Total assets include all nonfinancial and financial assets. "
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDSI04 "The financial resources provided to the private sector by domestic money banks as a share of total deposits. Domestic money banks comprise commercial banks and other financial institutions that accept transferable deposits, such as demand deposits. Total deposits include demand, time and saving deposits in deposit money banks."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDSI05 "The capital adequacy of deposit takers. It is a ratio of total regulatory capital to its assets held, weighted according to risk of those assets. "
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDSI06 "The ratio of the value of liquid assets (easily converted to cash) to short-term funding plus total deposits. Liquid assets include cash and due from banks, trading securities and at fair value through income, loans and advances to banks, reverse repos and cash collaterals. Deposits and short term funding includes total customer deposits (current, savings and term) and short term borrowing (money market instruments, CDs and other deposits)."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDSI07 "Provisions to nonperforming loans. Nonperforming loans are loans for which the contractual payments are delinquent, usually defined as and NPL ratio  being overdue for more than a certain number of days (e.g., usually more than 90 days). "
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDSM01 "Stock price volatility is the average of the 360-day volatility of the national stock market index."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDOI01 "Assets of three largest commercial banks as a share of total commercial banking assets. Total assets include total earning assets, cash and due from banks, foreclosed real estate, fixed assets, goodwill, other intangibles, current tax assets, deferred tax assets, discontinued operations and other assets."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDOI02 "The total value of demand, time and saving deposits at domestic deposit money banks as a share of GDP. Deposit money banks comprise commercial banks and other financial institutions that accept transferable deposits, such as demand deposits."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDOI03 "A measure of the degree of competition in the banking market. It measures the elasticity of banks revenues relative to input prices. Under perfect competition, an increase in input prices raises both marginal costs and total revenues by the same amount, and hence the H-statistic equals 1. Under a monopoly, an increase in input prices results in a rise in marginal costs, a fall in output, and a decline in revenues, leading to an H-statistic less than or equal to 0. When H-statistic is between 0 and 1, the system operates under monopolistic competition. However,  it is possible for H-stat to be greater than 1 in some oligopolistic markets."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDOI04 "A measure of market power in the banking market. It compares output pricing and marginal costs (that is, markup). An increase in the Lerner index indicates a deterioration of the competitive conduct of financial intermediaries."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDOI05 "A measure of degree of competition based on profit-efficiency in the banking market. It is calculated as the elasticity of profits to marginal costs. An increase in the Boone indicator implies a deterioration of the competitive conduct of financial intermediaries."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDOI06 "Assets of five largest banks as a share of total commercial banking assets. Total assets include total earning assets, cash and due from banks, foreclosed real estate, fixed assets, goodwill, other intangibles, current tax assets, deferred tax, discontinued operations and other assets."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDOI07 "Absolute value of liquid liabilities in 2010 (in past versions, 2000) US million dollars. Liquid liabilities are also known as broad money, or M3. They are the sum of currency and deposits in the central bank (M0), plus transferable deposits and electronic currency (M1), plus time and savings deposits, foreign currency transferable deposits, certificates of deposit, and securities repurchase agreements (M2), plus travelers checks, foreign currency time deposits, commercial paper, and shares of mutual funds or market funds held by residents."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDOI08 "Ratio of net offshore bank loans to GDP. An offshore bank is a bank located outside the country of residence of the depositor, typically in a low tax jurisdiction (or tax haven) that provides financial and legal advantages."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDOI09 "Ratio of outstanding offshore bank loans to GDP. An offshore bank is a bank located outside the country of residence of the depositor, typically in a low tax jurisdiction (or tax haven) that provides financial and legal advantages."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDOI10 "Percentage of loans and deposits of reporting banks vis-à-vis the banking sector to the domestic bank deposits."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDOI11 "Percentage of loans and deposits of reporting banks vis-à-vis the nonbanking sectors to the domestic bank deposits."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDOI12 "Percentage of loans and deposits of reporting banks vis-à-vis all sectors to the domestic bank deposits."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDOI13 "Workers' remittances and compensation of employees comprise current transfers by migrant workers and wages and salaries earned by nonresident workers. Data are the sum of three items defined in the fifth edition of the IMF's Balance of Payments Manual: workers' remittances, compensation of employees, and migrants' transfers. "
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDOI14 "The ratio of consolidated foreign claims to GDP of the banks that are reporting to BIS. Foreign claims are defined as the sum of cross-border claims plus foreign offices’ local claims in all currencies. In the consolidated banking statistics claims that are granted or extended to nonresidents are referred to as either cross-border claims.  In the context of the consolidated banking statistics, local claims refer to claims of domestic banks’ foreign affiliates (branches/subsidiaries) on the residents of the host country (i.e. country of residence of affiliates)."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDOI15 "Percentage of the number of foreign owned banks to the number of the total banks in an Economy. A foreign bank is a bank where 50 percent or more of its shares are owned by foreigners."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDOI16 "Percentage of the total banking assets that are held by foreign banks. A foreign bank is a bank where 50 percent or more of its shares are owned by foreigners."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDOI17 "Global leasing volume / GDP."
+{txt}
+{com}. label var GFDDOI18 "Total factoring volume / GDP."
+{txt}
+{com}. label var GFDDOI19 "Dummy variable for the presence of banking crisis (1=banking crisis, 0=none)"
+{txt}
+{com}. label var GFDDOM01 "Number of domestically incorporated companies listed on the country's stock exchanges at the end of the year per 1,000,000 people (does not include investment companies, mutual funds, or other collective investment vehicles)."
+{txt}note: label truncated to 80 characters
+
+{com}. label var GFDDOM02 "Stock market return is the growth rate of annual average stock market index."
+{txt}
+{com}. label var GFDDOE01 "December Consumer Price Index (2010=100)"
+{txt}
+{com}. label var GFDDOE02 "Average Consumer Price Index (2010=100)"
+{txt}
+{com}. label var NYGDPMKTPCD "GDP (Current USD)"
+{txt}
+{com}. label var NYGDPPCAPKD "GDP per Capita (Constant 2005 USD)"
+{txt}
+{com}. label var NYGNPMKTPCD "GNP (Current USD)"
+{txt}
+{com}. label var SPPOPTOTL "Population, Total"
+{txt}
+{com}. 
+. 
+. ren GFDDAI01 no_bank_acc
+{res}{txt}
+{com}. ren GFDDAI02 no_bank_br
+{res}{txt}
+{com}. ren GFDDAI03 pc_firms_loans
+{res}{txt}
+{com}. ren GFDDAI04 pc_sme_loans
+{res}{txt}
+{com}. ren GFDDAI05 pc_bank_acc
+{res}{txt}
+{com}. ren GFDDAI06 pc_savings_acc
+{res}{txt}
+{com}. ren GFDDAI07 pc_loans
+{res}{txt}
+{com}. ren GFDDAI08 pc_buss_acc
+{res}{txt}
+{com}. 
+. ren GFDDAI20 cc
+{res}{txt}
+{com}. ren GFDDAI21 dc
+{res}{txt}
+{com}. ren GFDDAI22 ep
+{res}{txt}
+{com}. ren GFDDAI23 mbank
+{res}{txt}
+{com}. ren GFDDAI24 msend
+{res}{txt}
+{com}. 
+. ren GFDDDI01 credit_to_gdp
+{res}{txt}
+{com}. ren GFDDDI02 bk_assets_to_gdp
+{res}{txt}
+{com}. ren GFDDDI03 nfi_assets_to_gdp
+{res}{txt}
+{com}. ren GFDDDI04 share_bk_assets_in_total
+{res}{txt}
+{com}. ren GFDDDI05 liquid_to_gdp
+{res}{txt}
+{com}. ren GFDDDI06 cba_to_gdp
+{res}{txt}
+{com}. ren GFDDDI07 mfa_to_gdp
+{res}{txt}
+{com}. ren GFDDDI08 fsd_to_gdp
+{res}{txt}
+{com}. 
+. ren GFDDDI12 credit_to_gdp_defl_ifs
+{res}{txt}
+{com}. ren GFDDDI13 pfa_to_gdp
+{res}{txt}
+{com}. ren GFDDDI14 credit_to_gdp_wb
+{res}{txt}
+{com}. 
+. ren GFDDEI01 interest_margin
+{res}{txt}
+{com}. ren GFDDEI02 spread
+{res}{txt}
+{com}. ren GFDDEI03 non_interest_income
+{res}{txt}
+{com}. ren GFDDEI04 overhead_to_assets
+{res}{txt}
+{com}. ren GFDDEI05 roa
+{res}{txt}
+{com}. ren GFDDEI06 roe
+{res}{txt}
+{com}. ren GFDDEI07 cost_to_income
+{res}{txt}
+{com}. 
+. ren GFDDSI01 zscore
+{res}{txt}
+{com}. ren GFDDSI02 npl
+{res}{txt}
+{com}. ren GFDDSI03 car
+{res}{txt}
+{com}. ren GFDDSI04 ltd
+{res}{txt}
+{com}. ren GFDDSI05 crwar
+{res}{txt}
+{com}. ren GFDDSI06 liquid
+{res}{txt}
+{com}. ren GFDDSI07 npl_prov
+{res}{txt}
+{com}. ren GFDDSM01 spv
+{res}{txt}
+{com}. ren GFDDOI01 bank_con
+{res}{txt}
+{com}. ren GFDDOI02 dep_to_gdp
+{res}{txt}
+{com}. ren GFDDOI03 h
+{res}{txt}
+{com}. ren GFDDOI04 lerner
+{res}{txt}
+{com}. ren GFDDOI05 boon
+{res}{txt}
+{com}. ren GFDDOI06 conc_5_bank
+{res}{txt}
+{com}. ren GFDDOI07 liq_liab
+{res}{txt}
+{com}. ren GFDDOI08 nrloans_to_gdp_net
+{res}{txt}
+{com}. ren GFDDOI09 nrloans_to_gdp_gross
+{res}{txt}
+{com}. 
+. ren GFDDOI13 rem_to_gdp
+{res}{txt}
+{com}.  
+. ren GFDDOI15 share_foreign
+{res}{txt}
+{com}. ren GFDDOI16 share_foreign_assets
+{res}{txt}
+{com}. ren GFDDOI17 leasing
+{res}{txt}
+{com}. ren GFDDOI18 factoring
+{res}{txt}
+{com}. ren GFDDOI19 crises_dummy
+{res}{txt}
+{com}. ren GFDDOM01 no_firms
+{res}{txt}
+{com}. ren GFDDOM02 stock_mkt_ret
+{res}{txt}
+{com}. ren GFDDOE01 cpi_eop_gfdd
+{res}{txt}
+{com}. ren GFDDOE02 cpi_avg_gfdd
+{res}{txt}
+{com}. ren NYGDPMKTPCD gdp_cur_usd_gfdd
+{res}{txt}
+{com}. ren NYGDPPCAPKD gdp_const_usd_gfdd
+{res}{txt}
+{com}. ren NYGNPMKTPCD gnp_cur_usd_gfdd
+{res}{txt}
+{com}. ren SPPOPTOTL pop_gfdd
+{res}{txt}
+{com}. 
+. 
+. ren ISO3 iso3
+{res}{txt}
+{com}. ren ISO2 iso2
+{res}{txt}
+{com}. ren IMFcode ctry
+{res}{txt}
+{com}. ren Country ctry_name
+{res}{txt}
+{com}. ren Region region
+{res}{txt}
+{com}. ren IncomeGroup incomegrp
+{res}{txt}
+{com}. ren Year yr
+{res}{txt}
+{com}. 
+. 
+. drop if ctry==.
+{txt}(770 observations deleted)
+
+{com}. assert ctry!=.
+{txt}
+{com}. 
+. *Izmišljamo zemlju European Union, da bismo imali "placeholer" za ECB kad ga spojimo s "$trn\Monetarni okviri_i_tečajni režimi_2008_onwards.dta"
+. 
+. set obs 11056
+{txt}{p}
+number of observations (_N)  was 11.055,
+now 11.056
+{p_end}
+
+{com}. replace yr =2000 in 11056
+{txt}(1 real change made)
+
+{com}. replace ctry = 110 in 11056
+{txt}(1 real change made)
+
+{com}. replace ctry_name = "European Union" in 11056
+{txt}(1 real change made)
+
+{com}. 
+. set obs 11057
+{txt}{p}
+number of observations (_N)  was 11.056,
+now 11.057
+{p_end}
+
+{com}. replace yr =2001 in 11057
+{txt}(1 real change made)
+
+{com}. replace ctry = 110 in 11057
+{txt}(1 real change made)
+
+{com}. replace ctry_name = "European Union" in 11057
+{txt}(1 real change made)
+
+{com}. 
+. set obs 11058
+{txt}{p}
+number of observations (_N)  was 11.057,
+now 11.058
+{p_end}
+
+{com}. replace yr =2002 in 11058
+{txt}(1 real change made)
+
+{com}. replace ctry = 110 in 11058
+{txt}(1 real change made)
+
+{com}. replace ctry_name = "European Union" in 11058
+{txt}(1 real change made)
+
+{com}. 
+. set obs 11059
+{txt}{p}
+number of observations (_N)  was 11.058,
+now 11.059
+{p_end}
+
+{com}. replace yr =2003 in 11059
+{txt}(1 real change made)
+
+{com}. replace ctry = 110 in 11059
+{txt}(1 real change made)
+
+{com}. replace ctry_name = "European Union" in 11059
+{txt}(1 real change made)
+
+{com}. 
+. set obs 11060
+{txt}{p}
+number of observations (_N)  was 11.059,
+now 11.060
+{p_end}
+
+{com}. replace yr =2004 in 11060
+{txt}(1 real change made)
+
+{com}. replace ctry = 110 in 11060
+{txt}(1 real change made)
+
+{com}. replace ctry_name = "European Union" in 11060
+{txt}(1 real change made)
+
+{com}. 
+. set obs 11061
+{txt}{p}
+number of observations (_N)  was 11.060,
+now 11.061
+{p_end}
+
+{com}. replace yr =2005 in 11061
+{txt}(1 real change made)
+
+{com}. replace ctry = 110 in 11061
+{txt}(1 real change made)
+
+{com}. replace ctry_name = "European Union" in 11061
+{txt}(1 real change made)
+
+{com}. 
+. set obs 11062
+{txt}{p}
+number of observations (_N)  was 11.061,
+now 11.062
+{p_end}
+
+{com}. replace yr =2006 in 11062
+{txt}(1 real change made)
+
+{com}. replace ctry = 110 in 11062
+{txt}(1 real change made)
+
+{com}. replace ctry_name = "European Union" in 11062
+{txt}(1 real change made)
+
+{com}. 
+. set obs 11063
+{txt}{p}
+number of observations (_N)  was 11.062,
+now 11.063
+{p_end}
+
+{com}. replace yr =2007 in 11063
+{txt}(1 real change made)
+
+{com}. replace ctry = 110 in 11063
+{txt}(1 real change made)
+
+{com}. replace ctry_name = "European Union" in 11063
+{txt}(1 real change made)
+
+{com}. 
+. set obs 11064
+{txt}{p}
+number of observations (_N)  was 11.063,
+now 11.064
+{p_end}
+
+{com}. replace yr =2008 in 11064
+{txt}(1 real change made)
+
+{com}. replace ctry = 110 in 11064
+{txt}(1 real change made)
+
+{com}. replace ctry_name = "European Union" in 11064
+{txt}(1 real change made)
+
+{com}. 
+. set obs 11065
+{txt}{p}
+number of observations (_N)  was 11.064,
+now 11.065
+{p_end}
+
+{com}. replace yr =2009 in 11065
+{txt}(1 real change made)
+
+{com}. replace ctry = 110 in 11065
+{txt}(1 real change made)
+
+{com}. replace ctry_name = "European Union" in 11065
+{txt}(1 real change made)
+
+{com}. 
+. set obs 11066
+{txt}{p}
+number of observations (_N)  was 11.065,
+now 11.066
+{p_end}
+
+{com}. replace yr =2010 in 11066
+{txt}(1 real change made)
+
+{com}. replace ctry = 110 in 11066
+{txt}(1 real change made)
+
+{com}. replace ctry_name = "European Union" in 11066
+{txt}(1 real change made)
+
+{com}. 
+. set obs 11067
+{txt}{p}
+number of observations (_N)  was 11.066,
+now 11.067
+{p_end}
+
+{com}. replace yr =2011 in 11067
+{txt}(1 real change made)
+
+{com}. replace ctry = 110 in 11067
+{txt}(1 real change made)
+
+{com}. replace ctry_name = "European Union" in 11067
+{txt}(1 real change made)
+
+{com}. 
+. set obs 11068
+{txt}{p}
+number of observations (_N)  was 11.067,
+now 11.068
+{p_end}
+
+{com}. replace yr =2012 in 11068
+{txt}(1 real change made)
+
+{com}. replace ctry = 110 in 11068
+{txt}(1 real change made)
+
+{com}. replace ctry_name = "European Union" in 11068
+{txt}(1 real change made)
+
+{com}. 
+. set obs 11069
+{txt}{p}
+number of observations (_N)  was 11.068,
+now 11.069
+{p_end}
+
+{com}. replace yr =2013 in 11069
+{txt}(1 real change made)
+
+{com}. replace ctry = 110 in 11069
+{txt}(1 real change made)
+
+{com}. replace ctry_name = "European Union" in 11069
+{txt}(1 real change made)
+
+{com}. 
+. set obs 11070
+{txt}{p}
+number of observations (_N)  was 11.069,
+now 11.070
+{p_end}
+
+{com}. replace yr =2014 in 11070
+{txt}(1 real change made)
+
+{com}. replace ctry = 110 in 11070
+{txt}(1 real change made)
+
+{com}. replace ctry_name = "European Union" in 11070
+{txt}(1 real change made)
+
+{com}. 
+. set obs 11071
+{txt}{p}
+number of observations (_N)  was 11.070,
+now 11.071
+{p_end}
+
+{com}. replace yr =2015 in 11071
+{txt}(1 real change made)
+
+{com}. replace ctry = 110 in 11071
+{txt}(1 real change made)
+
+{com}. replace ctry_name = "European Union" in 11071
+{txt}(1 real change made)
+
+{com}. 
+. replace region = "Europe & Central Asia" if ctry ==110
+{txt}(16 real changes made)
+
+{com}. replace incomegrp ="High income: OECD" if ctry == 110
+{txt}(16 real changes made)
+
+{com}. 
+. replace iso2 = "EU" if ctry ==110
+{txt}(16 real changes made)
+
+{com}. replace iso3 = "EU" if ctry ==110
+{txt}(16 real changes made)
+
+{com}. 
+. encode region, generate(reg)
+{txt}
+{com}. order reg, after(region)
+{txt}
+{com}. 
+. encode incomegrp, generate(incgrp)
+{txt}
+{com}. order incgrp, after(incomegrp)
+{txt}
+{com}. 
+. 
+. note: Čihak, M., A. Demirguc-Kunt, E. Feyen and R. Levine. (2017). 
+{res}{txt}
+{com}. note: Global Financial Development Database (GFDD): World Bank. 
+{res}{txt}
+{com}. note: http://www.worldbank.org/en/publication/gfdr/data/global-financial-development-database 
+{res}{txt}
+{com}. 
+. 
+. save "$phd\gfdd.dta", replace
+{txt}file E:\Kgattin\My_Documents\_Ph.D_i_CV\Ph.D. rad\Radionica_Prijava rada\gfdd.dta saved
+
+{com}. 
+. 
+. ********************************************************************************
+. ********************************************************************************
+. **
+. ** Import i merge podataka iz AREAER 2008-2015
+. ** 
+. ** http://data.imf.org/?sk=388DFA60-1D26-4ADE-B505-A05A558D9A42
+. **
+. ********************************************************************************
+. ********************************************************************************
+. 
+. 
+. merge m:m yr ctry using "$trn\\Monetarni okviri_i_tečajni režimi_2008_onwards.dta", keepusing(arr era) force
+{res}
+{txt}{col 5}Result{col 38}# of obs.
+{col 5}{hline 41}
+{col 5}not matched{col 30}{res}           9.926
+{txt}{col 9}from master{col 30}{res}           9.735{txt}  (_merge==1)
+{col 9}from using{col 30}{res}             191{txt}  (_merge==2)
+
+{col 5}matched{col 30}{res}           1.336{txt}  (_merge==3)
+{col 5}{hline 41}
+
+{com}. 
+. * GFDD ima samo do 2014. Za sada drop-amo 2015. Ako bude dostupan aupdate file-a, preskočimo drop
+. drop if yr==2015
+{txt}(192 observations deleted)
+
+{com}. 
+. *Monetarni okviri_i_tečajni režimi_2008_onwards.dta ima manji obuhvat zemalja (192). 
+. *Kada smo maknuli 2015. _merge==3 je prazno
+. list ctry ctry_name if yr==2014 & _merge==3, clean
+{txt}
+         {res}ctry                        ctry_name {txt} 
+10869.   {res} 110                   European Union {txt} 
+10870.   {res} 111                    United States {txt} 
+10871.   {res} 112                   United Kingdom {txt} 
+10872.   {res} 122                          Austria {txt} 
+10873.   {res} 124                          Belgium {txt} 
+10874.   {res} 128                          Denmark {txt} 
+10875.   {res} 132                           France {txt} 
+10876.   {res} 134                          Germany {txt} 
+10877.   {res} 135                       San Marino {txt} 
+10878.   {res} 136                            Italy {txt} 
+10879.   {res} 137                       Luxembourg {txt} 
+10880.   {res} 138                      Netherlands {txt} 
+10881.   {res} 142                           Norway {txt} 
+10882.   {res} 144                           Sweden {txt} 
+10883.   {res} 146                      Switzerland {txt} 
+10884.   {res} 156                           Canada {txt} 
+10885.   {res} 158                            Japan {txt} 
+10886.   {res} 172                          Finland {txt} 
+10887.   {res} 174                           Greece {txt} 
+10888.   {res} 176                          Iceland {txt} 
+10889.   {res} 178                          Ireland {txt} 
+10890.   {res} 181                            Malta {txt} 
+10891.   {res} 182                         Portugal {txt} 
+10892.   {res} 184                            Spain {txt} 
+10893.   {res} 186                           Turkey {txt} 
+10894.   {res} 193                        Australia {txt} 
+10895.   {res} 196                      New Zealand {txt} 
+10896.   {res} 199                     South Africa {txt} 
+10897.   {res} 213                        Argentina {txt} 
+10898.   {res} 218                          Bolivia {txt} 
+10899.   {res} 223                           Brazil {txt} 
+10900.   {res} 228                            Chile {txt} 
+10901.   {res} 233                         Colombia {txt} 
+10902.   {res} 238                       Costa Rica {txt} 
+10903.   {res} 243               Dominican Republic {txt} 
+10904.   {res} 248                          Ecuador {txt} 
+10905.   {res} 253                      El Salvador {txt} 
+10906.   {res} 258                        Guatemala {txt} 
+10907.   {res} 263                            Haiti {txt} 
+10908.   {res} 268                         Honduras {txt} 
+10909.   {res} 273                           Mexico {txt} 
+10910.   {res} 278                        Nicaragua {txt} 
+10911.   {res} 283                           Panama {txt} 
+10912.   {res} 288                         Paraguay {txt} 
+10913.   {res} 293                             Peru {txt} 
+10914.   {res} 298                          Uruguay {txt} 
+10915.   {res} 299                    Venezuela, RB {txt} 
+10916.   {res} 311              Antigua and Barbuda {txt} 
+10917.   {res} 313                     Bahamas, The {txt} 
+10918.   {res} 314                            Aruba {txt} 
+10919.   {res} 316                         Barbados {txt} 
+10921.   {res} 321                         Dominica {txt} 
+10922.   {res} 328                          Grenada {txt} 
+10923.   {res} 336                           Guyana {txt} 
+10924.   {res} 339                           Belize {txt} 
+10925.   {res} 343                          Jamaica {txt} 
+10926.   {res} 354                          Curaçao {txt} 
+10928.   {res} 361              St. Kitts and Nevis {txt} 
+10929.   {res} 362                        St. Lucia {txt} 
+10930.   {res} 364   St. Vincent and the Grenadines {txt} 
+10931.   {res} 366                         Suriname {txt} 
+10932.   {res} 369              Trinidad and Tobago {txt} 
+10934.   {res} 419                          Bahrain {txt} 
+10935.   {res} 423                           Cyprus {txt} 
+10936.   {res} 429               Iran, Islamic Rep. {txt} 
+10937.   {res} 433                             Iraq {txt} 
+10938.   {res} 436                           Israel {txt} 
+10939.   {res} 439                           Jordan {txt} 
+10940.   {res} 443                           Kuwait {txt} 
+10941.   {res} 446                          Lebanon {txt} 
+10942.   {res} 449                             Oman {txt} 
+10943.   {res} 453                            Qatar {txt} 
+10944.   {res} 456                     Saudi Arabia {txt} 
+10945.   {res} 463             Syrian Arab Republic {txt} 
+10946.   {res} 466             United Arab Emirates {txt} 
+10947.   {res} 469                 Egypt, Arab Rep. {txt} 
+10948.   {res} 474                      Yemen, Rep. {txt} 
+10950.   {res} 512                      Afghanistan {txt} 
+10951.   {res} 513                       Bangladesh {txt} 
+10952.   {res} 514                           Bhutan {txt} 
+10953.   {res} 516                Brunei Darussalam {txt} 
+10954.   {res} 518                          Myanmar {txt} 
+10955.   {res} 522                         Cambodia {txt} 
+10956.   {res} 524                        Sri Lanka {txt} 
+10958.   {res} 532             Hong Kong SAR, China {txt} 
+10959.   {res} 534                            India {txt} 
+10960.   {res} 536                        Indonesia {txt} 
+10961.   {res} 537                      Timor-Leste {txt} 
+10962.   {res} 542                      Korea, Rep. {txt} 
+10963.   {res} 544                          Lao PDR {txt} 
+10965.   {res} 548                         Malaysia {txt} 
+10966.   {res} 556                         Maldives {txt} 
+10967.   {res} 558                            Nepal {txt} 
+10968.   {res} 564                         Pakistan {txt} 
+10969.   {res} 565                            Palau {txt} 
+10970.   {res} 566                      Philippines {txt} 
+10971.   {res} 576                        Singapore {txt} 
+10972.   {res} 578                         Thailand {txt} 
+10973.   {res} 582                          Vietnam {txt} 
+10974.   {res} 611                         Djibouti {txt} 
+10975.   {res} 612                          Algeria {txt} 
+10976.   {res} 614                           Angola {txt} 
+10977.   {res} 616                         Botswana {txt} 
+10978.   {res} 618                          Burundi {txt} 
+10979.   {res} 622                         Cameroon {txt} 
+10980.   {res} 624                       Cabo Verde {txt} 
+10981.   {res} 626         Central African Republic {txt} 
+10982.   {res} 628                             Chad {txt} 
+10983.   {res} 632                          Comoros {txt} 
+10984.   {res} 634                      Congo, Rep. {txt} 
+10985.   {res} 636                 Congo, Dem. Rep. {txt} 
+10986.   {res} 638                            Benin {txt} 
+10987.   {res} 642                Equatorial Guinea {txt} 
+10988.   {res} 643                          Eritrea {txt} 
+10989.   {res} 644                         Ethiopia {txt} 
+10990.   {res} 646                            Gabon {txt} 
+10991.   {res} 648                      Gambia, The {txt} 
+10992.   {res} 652                            Ghana {txt} 
+10993.   {res} 654                    Guinea-Bissau {txt} 
+10994.   {res} 656                           Guinea {txt} 
+10995.   {res} 662                    Côte d'Ivoire {txt} 
+10996.   {res} 664                            Kenya {txt} 
+10997.   {res} 666                          Lesotho {txt} 
+10998.   {res} 668                          Liberia {txt} 
+10999.   {res} 672                            Libya {txt} 
+11000.   {res} 674                       Madagascar {txt} 
+11001.   {res} 676                           Malawi {txt} 
+11002.   {res} 678                             Mali {txt} 
+11003.   {res} 682                       Mauritania {txt} 
+11004.   {res} 684                        Mauritius {txt} 
+11005.   {res} 686                          Morocco {txt} 
+11006.   {res} 688                       Mozambique {txt} 
+11007.   {res} 692                            Niger {txt} 
+11008.   {res} 694                          Nigeria {txt} 
+11009.   {res} 698                         Zimbabwe {txt} 
+11010.   {res} 714                           Rwanda {txt} 
+11011.   {res} 716            São Tomé and Principe {txt} 
+11012.   {res} 718                       Seychelles {txt} 
+11013.   {res} 722                          Senegal {txt} 
+11014.   {res} 724                     Sierra Leone {txt} 
+11015.   {res} 726                          Somalia {txt} 
+11016.   {res} 728                          Namibia {txt} 
+11017.   {res} 732                            Sudan {txt} 
+11018.   {res} 733                      South Sudan {txt} 
+11019.   {res} 734                        Swaziland {txt} 
+11020.   {res} 738                         Tanzania {txt} 
+11021.   {res} 742                             Togo {txt} 
+11022.   {res} 744                          Tunisia {txt} 
+11023.   {res} 746                           Uganda {txt} 
+11024.   {res} 748                     Burkina Faso {txt} 
+11025.   {res} 754                           Zambia {txt} 
+11026.   {res} 813                  Solomon Islands {txt} 
+11028.   {res} 819                             Fiji {txt} 
+11029.   {res} 826                         Kiribati {txt} 
+11031.   {res} 846                          Vanuatu {txt} 
+11032.   {res} 853                 Papua New Guinea {txt} 
+11033.   {res} 862                            Samoa {txt} 
+11034.   {res} 866                            Tonga {txt} 
+11035.   {res} 867                 Marshall Islands {txt} 
+11036.   {res} 868            Micronesia, Fed. Sts. {txt} 
+11037.   {res} 869                           Tuvalu {txt} 
+11039.   {res} 911                          Armenia {txt} 
+11040.   {res} 912                       Azerbaijan {txt} 
+11041.   {res} 913                          Belarus {txt} 
+11042.   {res} 914                          Albania {txt} 
+11043.   {res} 915                          Georgia {txt} 
+11044.   {res} 916                       Kazakhstan {txt} 
+11045.   {res} 917                  Kyrgyz Republic {txt} 
+11046.   {res} 918                         Bulgaria {txt} 
+11047.   {res} 921                          Moldova {txt} 
+11048.   {res} 922               Russian Federation {txt} 
+11049.   {res} 923                       Tajikistan {txt} 
+11050.   {res} 924                            China {txt} 
+11051.   {res} 925                     Turkmenistan {txt} 
+11052.   {res} 926                          Ukraine {txt} 
+11053.   {res} 927                       Uzbekistan {txt} 
+11055.   {res} 935                   Czech Republic {txt} 
+11056.   {res} 936                  Slovak Republic {txt} 
+11057.   {res} 939                          Estonia {txt} 
+11058.   {res} 941                           Latvia {txt} 
+11059.   {res} 942                           Serbia {txt} 
+11060.   {res} 943                       Montenegro {txt} 
+11061.   {res} 944                          Hungary {txt} 
+11062.   {res} 946                        Lithuania {txt} 
+11063.   {res} 948                         Mongolia {txt} 
+11064.   {res} 960                          Croatia {txt} 
+11065.   {res} 961                         Slovenia {txt} 
+11066.   {res} 962                   Macedonia, FYR {txt} 
+11067.   {res} 963           Bosnia and Herzegovina {txt} 
+11068.   {res} 964                           Poland {txt} 
+11069.   {res} 967                           Kosovo {txt} 
+11070.   {res} 968                          Romania {txt} 
+
+{com}. 
+. *gledamo koje zemlje nisu u oba skupa
+. 
+. list ctry ctry_name if yr==2014 & _merge==3, clean
+{txt}
+         {res}ctry                        ctry_name {txt} 
+10869.   {res} 110                   European Union {txt} 
+10870.   {res} 111                    United States {txt} 
+10871.   {res} 112                   United Kingdom {txt} 
+10872.   {res} 122                          Austria {txt} 
+10873.   {res} 124                          Belgium {txt} 
+10874.   {res} 128                          Denmark {txt} 
+10875.   {res} 132                           France {txt} 
+10876.   {res} 134                          Germany {txt} 
+10877.   {res} 135                       San Marino {txt} 
+10878.   {res} 136                            Italy {txt} 
+10879.   {res} 137                       Luxembourg {txt} 
+10880.   {res} 138                      Netherlands {txt} 
+10881.   {res} 142                           Norway {txt} 
+10882.   {res} 144                           Sweden {txt} 
+10883.   {res} 146                      Switzerland {txt} 
+10884.   {res} 156                           Canada {txt} 
+10885.   {res} 158                            Japan {txt} 
+10886.   {res} 172                          Finland {txt} 
+10887.   {res} 174                           Greece {txt} 
+10888.   {res} 176                          Iceland {txt} 
+10889.   {res} 178                          Ireland {txt} 
+10890.   {res} 181                            Malta {txt} 
+10891.   {res} 182                         Portugal {txt} 
+10892.   {res} 184                            Spain {txt} 
+10893.   {res} 186                           Turkey {txt} 
+10894.   {res} 193                        Australia {txt} 
+10895.   {res} 196                      New Zealand {txt} 
+10896.   {res} 199                     South Africa {txt} 
+10897.   {res} 213                        Argentina {txt} 
+10898.   {res} 218                          Bolivia {txt} 
+10899.   {res} 223                           Brazil {txt} 
+10900.   {res} 228                            Chile {txt} 
+10901.   {res} 233                         Colombia {txt} 
+10902.   {res} 238                       Costa Rica {txt} 
+10903.   {res} 243               Dominican Republic {txt} 
+10904.   {res} 248                          Ecuador {txt} 
+10905.   {res} 253                      El Salvador {txt} 
+10906.   {res} 258                        Guatemala {txt} 
+10907.   {res} 263                            Haiti {txt} 
+10908.   {res} 268                         Honduras {txt} 
+10909.   {res} 273                           Mexico {txt} 
+10910.   {res} 278                        Nicaragua {txt} 
+10911.   {res} 283                           Panama {txt} 
+10912.   {res} 288                         Paraguay {txt} 
+10913.   {res} 293                             Peru {txt} 
+10914.   {res} 298                          Uruguay {txt} 
+10915.   {res} 299                    Venezuela, RB {txt} 
+10916.   {res} 311              Antigua and Barbuda {txt} 
+10917.   {res} 313                     Bahamas, The {txt} 
+10918.   {res} 314                            Aruba {txt} 
+10919.   {res} 316                         Barbados {txt} 
+10921.   {res} 321                         Dominica {txt} 
+10922.   {res} 328                          Grenada {txt} 
+10923.   {res} 336                           Guyana {txt} 
+10924.   {res} 339                           Belize {txt} 
+10925.   {res} 343                          Jamaica {txt} 
+10926.   {res} 354                          Curaçao {txt} 
+10928.   {res} 361              St. Kitts and Nevis {txt} 
+10929.   {res} 362                        St. Lucia {txt} 
+10930.   {res} 364   St. Vincent and the Grenadines {txt} 
+10931.   {res} 366                         Suriname {txt} 
+10932.   {res} 369              Trinidad and Tobago {txt} 
+10934.   {res} 419                          Bahrain {txt} 
+10935.   {res} 423                           Cyprus {txt} 
+10936.   {res} 429               Iran, Islamic Rep. {txt} 
+10937.   {res} 433                             Iraq {txt} 
+10938.   {res} 436                           Israel {txt} 
+10939.   {res} 439                           Jordan {txt} 
+10940.   {res} 443                           Kuwait {txt} 
+10941.   {res} 446                          Lebanon {txt} 
+10942.   {res} 449                             Oman {txt} 
+10943.   {res} 453                            Qatar {txt} 
+10944.   {res} 456                     Saudi Arabia {txt} 
+10945.   {res} 463             Syrian Arab Republic {txt} 
+10946.   {res} 466             United Arab Emirates {txt} 
+10947.   {res} 469                 Egypt, Arab Rep. {txt} 
+10948.   {res} 474                      Yemen, Rep. {txt} 
+10950.   {res} 512                      Afghanistan {txt} 
+10951.   {res} 513                       Bangladesh {txt} 
+10952.   {res} 514                           Bhutan {txt} 
+10953.   {res} 516                Brunei Darussalam {txt} 
+10954.   {res} 518                          Myanmar {txt} 
+10955.   {res} 522                         Cambodia {txt} 
+10956.   {res} 524                        Sri Lanka {txt} 
+10958.   {res} 532             Hong Kong SAR, China {txt} 
+10959.   {res} 534                            India {txt} 
+10960.   {res} 536                        Indonesia {txt} 
+10961.   {res} 537                      Timor-Leste {txt} 
+10962.   {res} 542                      Korea, Rep. {txt} 
+10963.   {res} 544                          Lao PDR {txt} 
+10965.   {res} 548                         Malaysia {txt} 
+10966.   {res} 556                         Maldives {txt} 
+10967.   {res} 558                            Nepal {txt} 
+10968.   {res} 564                         Pakistan {txt} 
+10969.   {res} 565                            Palau {txt} 
+10970.   {res} 566                      Philippines {txt} 
+10971.   {res} 576                        Singapore {txt} 
+10972.   {res} 578                         Thailand {txt} 
+10973.   {res} 582                          Vietnam {txt} 
+10974.   {res} 611                         Djibouti {txt} 
+10975.   {res} 612                          Algeria {txt} 
+10976.   {res} 614                           Angola {txt} 
+10977.   {res} 616                         Botswana {txt} 
+10978.   {res} 618                          Burundi {txt} 
+10979.   {res} 622                         Cameroon {txt} 
+10980.   {res} 624                       Cabo Verde {txt} 
+10981.   {res} 626         Central African Republic {txt} 
+10982.   {res} 628                             Chad {txt} 
+10983.   {res} 632                          Comoros {txt} 
+10984.   {res} 634                      Congo, Rep. {txt} 
+10985.   {res} 636                 Congo, Dem. Rep. {txt} 
+10986.   {res} 638                            Benin {txt} 
+10987.   {res} 642                Equatorial Guinea {txt} 
+10988.   {res} 643                          Eritrea {txt} 
+10989.   {res} 644                         Ethiopia {txt} 
+10990.   {res} 646                            Gabon {txt} 
+10991.   {res} 648                      Gambia, The {txt} 
+10992.   {res} 652                            Ghana {txt} 
+10993.   {res} 654                    Guinea-Bissau {txt} 
+10994.   {res} 656                           Guinea {txt} 
+10995.   {res} 662                    Côte d'Ivoire {txt} 
+10996.   {res} 664                            Kenya {txt} 
+10997.   {res} 666                          Lesotho {txt} 
+10998.   {res} 668                          Liberia {txt} 
+10999.   {res} 672                            Libya {txt} 
+11000.   {res} 674                       Madagascar {txt} 
+11001.   {res} 676                           Malawi {txt} 
+11002.   {res} 678                             Mali {txt} 
+11003.   {res} 682                       Mauritania {txt} 
+11004.   {res} 684                        Mauritius {txt} 
+11005.   {res} 686                          Morocco {txt} 
+11006.   {res} 688                       Mozambique {txt} 
+11007.   {res} 692                            Niger {txt} 
+11008.   {res} 694                          Nigeria {txt} 
+11009.   {res} 698                         Zimbabwe {txt} 
+11010.   {res} 714                           Rwanda {txt} 
+11011.   {res} 716            São Tomé and Principe {txt} 
+11012.   {res} 718                       Seychelles {txt} 
+11013.   {res} 722                          Senegal {txt} 
+11014.   {res} 724                     Sierra Leone {txt} 
+11015.   {res} 726                          Somalia {txt} 
+11016.   {res} 728                          Namibia {txt} 
+11017.   {res} 732                            Sudan {txt} 
+11018.   {res} 733                      South Sudan {txt} 
+11019.   {res} 734                        Swaziland {txt} 
+11020.   {res} 738                         Tanzania {txt} 
+11021.   {res} 742                             Togo {txt} 
+11022.   {res} 744                          Tunisia {txt} 
+11023.   {res} 746                           Uganda {txt} 
+11024.   {res} 748                     Burkina Faso {txt} 
+11025.   {res} 754                           Zambia {txt} 
+11026.   {res} 813                  Solomon Islands {txt} 
+11028.   {res} 819                             Fiji {txt} 
+11029.   {res} 826                         Kiribati {txt} 
+11031.   {res} 846                          Vanuatu {txt} 
+11032.   {res} 853                 Papua New Guinea {txt} 
+11033.   {res} 862                            Samoa {txt} 
+11034.   {res} 866                            Tonga {txt} 
+11035.   {res} 867                 Marshall Islands {txt} 
+11036.   {res} 868            Micronesia, Fed. Sts. {txt} 
+11037.   {res} 869                           Tuvalu {txt} 
+11039.   {res} 911                          Armenia {txt} 
+11040.   {res} 912                       Azerbaijan {txt} 
+11041.   {res} 913                          Belarus {txt} 
+11042.   {res} 914                          Albania {txt} 
+11043.   {res} 915                          Georgia {txt} 
+11044.   {res} 916                       Kazakhstan {txt} 
+11045.   {res} 917                  Kyrgyz Republic {txt} 
+11046.   {res} 918                         Bulgaria {txt} 
+11047.   {res} 921                          Moldova {txt} 
+11048.   {res} 922               Russian Federation {txt} 
+11049.   {res} 923                       Tajikistan {txt} 
+11050.   {res} 924                            China {txt} 
+11051.   {res} 925                     Turkmenistan {txt} 
+11052.   {res} 926                          Ukraine {txt} 
+11053.   {res} 927                       Uzbekistan {txt} 
+11055.   {res} 935                   Czech Republic {txt} 
+11056.   {res} 936                  Slovak Republic {txt} 
+11057.   {res} 939                          Estonia {txt} 
+11058.   {res} 941                           Latvia {txt} 
+11059.   {res} 942                           Serbia {txt} 
+11060.   {res} 943                       Montenegro {txt} 
+11061.   {res} 944                          Hungary {txt} 
+11062.   {res} 946                        Lithuania {txt} 
+11063.   {res} 948                         Mongolia {txt} 
+11064.   {res} 960                          Croatia {txt} 
+11065.   {res} 961                         Slovenia {txt} 
+11066.   {res} 962                   Macedonia, FYR {txt} 
+11067.   {res} 963           Bosnia and Herzegovina {txt} 
+11068.   {res} 964                           Poland {txt} 
+11069.   {res} 967                           Kosovo {txt} 
+11070.   {res} 968                          Romania {txt} 
+
+{com}. 
+. 
+. list region ctry ctry_name if yr==2014 & era==., clean
+{txt}
+         {res}                    region   ctry            ctry_name {txt} 
+10920.   {res}             North America    319              Bermuda {txt} 
+10927.   {res} Latin America & Caribbean    359          Puerto Rico {txt} 
+10933.   {res} Latin America & Caribbean    377       Cayman Islands {txt} 
+10949.   {res}Middle East & North Africa    487   West Bank and Gaza {txt} 
+10957.   {res}       East Asia & Pacific    528        Taiwan, China {txt} 
+10964.   {res}       East Asia & Pacific    546     Macao SAR, China {txt} 
+11027.   {res}     Europe & Central Asia    816       Faeroe Islands {txt} 
+11030.   {res}       East Asia & Pacific    839        New Caledonia {txt} 
+11038.   {res}       East Asia & Pacific    887     French Polynesia {txt} 
+11054.   {res} Latin America & Caribbean    928                 Cuba {txt} 
+
+{com}. list region ctry ctry_name if yr==2014 & _merge==1, clean
+{txt}
+         {res}                    region   ctry            ctry_name {txt} 
+10920.   {res}             North America    319              Bermuda {txt} 
+10927.   {res} Latin America & Caribbean    359          Puerto Rico {txt} 
+10933.   {res} Latin America & Caribbean    377       Cayman Islands {txt} 
+10949.   {res}Middle East & North Africa    487   West Bank and Gaza {txt} 
+10957.   {res}       East Asia & Pacific    528        Taiwan, China {txt} 
+10964.   {res}       East Asia & Pacific    546     Macao SAR, China {txt} 
+11027.   {res}     Europe & Central Asia    816       Faeroe Islands {txt} 
+11030.   {res}       East Asia & Pacific    839        New Caledonia {txt} 
+11038.   {res}       East Asia & Pacific    887     French Polynesia {txt} 
+11054.   {res} Latin America & Caribbean    928                 Cuba {txt} 
+
+{com}. 
+. 
+. note: Čihak, M., A. Demirguc-Kunt, E. Feyen and R. Levine. (2017). 
+{res}{txt}
+{com}. note: Global Financial Development Database (GFDD): World Bank. 
+{res}{txt}
+{com}. note: http://www.worldbank.org/en/publication/gfdr/data/global-financial-development-database 
+{res}{txt}
+{com}. note: AREAER 2008-2015
+{res}{txt}
+{com}. note: http://data.imf.org/?sk=388DFA60-1D26-4ADE-B505-A05A558D9A42
+{res}{txt}
+{com}. note: Spajamo GFDD (WB) i AREAER (IMF)
+{res}{txt}
+{com}. 
+. 
+. 
+. 
+. *Radimo panel
+. 
+. xtset ctry yr, yearly
+{res}{txt}{col 8}panel variable:  {res}ctry (unbalanced)
+{txt}{col 9}time variable:  {res}{col 25}yr, 1960 to 2014
+{txt}{col 17}delta:  {res}1 year
+{txt}
+{com}. xtdescribe
+
+    {txt}ctry:  {res}110{txt}, {res}111{txt}, ..., {res}968                                {txt}n ={res}        202
+      {txt}yr:  {res}1960, 1961, ..., 2014                             {txt}T ={res}         55
+           {txt}Delta(yr) = {res}1 year
+           {txt}Span(yr)  = {res}55 periods
+           {txt}(ctry*yr uniquely identifies each observation)
+
+Distribution of T_i:   min      5%     25%       50%       75%     95%     max
+                    {res}    15      55      55        55        55      55      55
+
+{txt}{col 6}Freq.  Percent    Cum. {c |}  Pattern
+ {hline 27}{c +}{c -}{c -}{hline 55}
+{res}      201     99,50   99,50{txt} {c |}  {res}1111111111111111111111111111111111111111111111111111111
+        1      0,50  100,00{txt} {c |}  {res}........................................111111111111111
+{txt} {hline 27}{c +}{c -}{c -}{hline 55}
+{res}      202    100,00        {txt} {c |}  {res}XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+{txt}
+{com}. 
+. datasignature set
+{res}  11070:127(109971):854714643:2802642970       {txt}(data signature set)
+
+{com}. save "$phd\gfdd_areaer.dta", replace
+{txt}file E:\Kgattin\My_Documents\_Ph.D_i_CV\Ph.D. rad\Radionica_Prijava rada\gfdd_areaer.dta saved
+
+{com}. export excel using "$phd\gfdd_areaer", sheet("data") firstrow(variables) sheetreplace
+{res}{txt}file E:\Kgattin\My_Documents\_Ph.D_i_CV\Ph.D. rad\Radionica_Prijava rada\gfdd_areaer.xls saved
+
+{com}. 
+. 
+. *Osnovne tabulacije
+. 
+. table region incomegrp if yr==2014, c(freq) col row
+
+{txt}{hline 27}{c TT}{hline 43}
+                           {c |}                Income Group               
+                    Region {c |}    High income: OECD  High income: nonOECD
+{hline 27}{c +}{hline 43}
+       East Asia & Pacific {c |}                    {res}4                     7
+     {txt}Europe & Central Asia {c |}                   {res}25                     7
+ {txt}Latin America & Caribbean {c |}                    {res}1                    12
+{txt}Middle East & North Africa {c |}                    {res}1                     7
+             {txt}North America {c |}                    {res}2                     1
+                {txt}South Asia {c |}                     {res}                      
+        {txt}Sub-Saharan Africa {c |}                     {res}                     2
+                           {txt}{c |} 
+                     Total {c |}                   {res}33                    36
+{txt}{hline 27}{c BT}{hline 43}
+
+{hline 27}{c TT}{hline 43}
+                           {c |}                Income Group               
+                    Region {c |}           Low income   Lower middle income
+{hline 27}{c +}{hline 43}
+       East Asia & Pacific {c |}                    {res}1                    12
+     {txt}Europe & Central Asia {c |}                     {res}                     8
+ {txt}Latin America & Caribbean {c |}                    {res}1                     6
+{txt}Middle East & North Africa {c |}                     {res}                     6
+             {txt}North America {c |}                     {res}                      
+                {txt}South Asia {c |}                    {res}2                     5
+        {txt}Sub-Saharan Africa {c |}                   {res}26                    14
+                           {txt}{c |} 
+                     Total {c |}                   {res}30                    51
+{txt}{hline 27}{c BT}{hline 43}
+
+{hline 27}{c TT}{hline 43}
+                           {c |}                Income Group               
+                    Region {c |}  Upper middle income                 Total
+{hline 27}{c +}{hline 43}
+       East Asia & Pacific {c |}                    {res}9                    33
+     {txt}Europe & Central Asia {c |}                   {res}12                    52
+ {txt}Latin America & Caribbean {c |}                   {res}17                    37
+{txt}Middle East & North Africa {c |}                    {res}7                    21
+             {txt}North America {c |}                     {res}                     3
+                {txt}South Asia {c |}                    {res}1                     8
+        {txt}Sub-Saharan Africa {c |}                    {res}6                    48
+                           {txt}{c |} 
+                     Total {c |}                   {res}52                   202
+{txt}{hline 27}{c BT}{hline 43}
+
+{com}. table arr era if yr==2014, c(freq) col row
+
+{txt}{hline 33}{c TT}{hline 38}
+                                 {c |}       Exchange rate arrangement      
+              Monetary framework {c |} 1. Hard peg  2. Soft peg  3. Floating
+{hline 33}{c +}{hline 38}
+         1. Exchange rate anchor {c |}          {res}24           60             
+    {txt}2. Monetary aggregate target {c |}            {res}           13           10
+{txt}3. Inflation-targeting framework {c |}            {res}            4           32
+     {txt}4. Other monetary framework {c |}            {res}           13           25
+                                 {txt}{c |} 
+                           Total {c |}          {res}24           90           67
+{txt}{hline 33}{c BT}{hline 38}
+
+{hline 33}{c TT}{hline 25}
+                                 {c |}Exchange rate arrangement
+              Monetary framework {c |} 4. Residual        Total
+{hline 33}{c +}{hline 25}
+         1. Exchange rate anchor {c |}           {res}3           87
+    {txt}2. Monetary aggregate target {c |}           {res}2           25
+{txt}3. Inflation-targeting framework {c |}            {res}           36
+     {txt}4. Other monetary framework {c |}           {res}6           44
+                                 {txt}{c |} 
+                           Total {c |}          {res}11          192
+{txt}{hline 33}{c BT}{hline 25}
+
+{com}. 
+. 
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}E:\Kgattin\My_Documents\_Ph.D_i_CV\Ph.D. rad\Radionica_Prijava rada\1000_gfdd_sdc_ifs_input.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}26 May 2017, 15:37:24
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
